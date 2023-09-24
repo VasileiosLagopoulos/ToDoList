@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        
+        <div class="navitem" id="calendar">
+            <a href="/">
+            <img src="images/calendar.png">
+            <h2>Today</h2>
+            </a>
+            
+        </div>
+        <div class="navitem" id="work">
+            <a href="/work">
+            <img src="images/work.png">
+            <h2>Work</h2>
+            </a>
+        </div>
+
+    </div>
+    <div class="tasklist">
+        <h1 class="listtitle"> <%= info.title%> </h1>
+        <% info.items.forEach((task)=>{ %>
+            <div class="task">
+                <input type="checkbox" class="box">
+                <p class="textfield"><%= task %></p>
+            </div>
+            <%})%>
+        <div class="task">
+            <form id="subform" method="POST" action="">
+                <input type="text" placeholder="Type" id="tasktext" name="text">
+                <input type="submit" value="" id="addbutton">
+            </form>
+            <!-- <input  type="text" id="tasktext" placeholder="Type" >
+            <button id="addbutton"></button> -->
+        </div>
+        
+
+    </div>
+
+    <script src="myjs.js" charset="UTF-8"></script>
+</body>
+</html>

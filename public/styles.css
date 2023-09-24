@@ -1,0 +1,89 @@
+body{
+    background: rgb(226,230,147);
+    background: linear-gradient(90deg, rgba(226,230,147,0.6) 41%, rgba(225,162,163,0.6) 76%);
+}
+
+input:checked + p {
+    text-decoration: line-through;
+    text-decoration-color: #a683e3;
+}
+
+#tasktext{
+    border: none;
+    height: 53px;
+    text-align: flex-start;
+    padding-left: 20px;
+    font-size: 20px;
+    width: 80%;
+    background-color: #e4e9fd;
+    
+}
+
+
+#addbutton{
+    height: 40px;
+    width: 40px;
+    background-image: url(/images/button.png);
+    background-size: 40px 40px;
+    border: none;
+    margin-top: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    margin-top: 0px;
+    display: inline;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+.listtitle{
+    margin-bottom: 0px;
+}
+h1{
+    color: #ffffff;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgb(223, 159, 223);
+}
+.tasklist {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.navitem{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.task{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: #e4e9fd;
+    width: 339px;
+    border-bottom: 1px solid grey;
+}
+#subform{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.box{
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+img{
+    height: 20px;
+    width: 20px;
+}
