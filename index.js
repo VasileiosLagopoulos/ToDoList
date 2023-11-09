@@ -26,7 +26,7 @@ app.get("/work", (req, res) => {
         info : data
     });
 });
-// hello 
+// hello aaaa
 app.post("/", (req, res) =>{
     console.log(req.body);
     itemsDay.push(req.body.text);
